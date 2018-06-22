@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.review.field_review_item_country
     - field.field.node.review.field_review_item_language
     - field.field.node.review.field_review_item_media
+    - field.field.node.review.field_review_item_metadescriptio
     - field.field.node.review.field_review_item_pub_date
     - field.field.node.review.field_review_item_publisher
     - field.field.node.review.field_review_item_tags
@@ -28,6 +29,7 @@ dependencies:
     - datetime
     - entity_browser
     - field_group
+    - inline_entity_form
     - link
     - metatag
     - paragraphs
@@ -71,6 +73,9 @@ third_party_settings:
         - field_review_item_claim
         - field_review_item_authors
         - field_review_item_media
+        - field_review_item_video
+        - field_review_item_image
+        - field_review_item_tweet
         - group_review_item_details
       parent_name: ''
       weight: 8
@@ -89,7 +94,7 @@ third_party_settings:
         - field_review_item_country
         - field_review_item_city
       parent_name: group_review_item
-      weight: 16
+      weight: 19
       format_type: details
       format_settings:
         id: ''
@@ -191,16 +196,18 @@ content:
   field_review_item_media:
     weight: 15
     settings:
-      entity_browser: image_browser
-      field_widget_display: rendered_entity
-      field_widget_edit: true
-      field_widget_remove: true
-      open: true
-      selection_mode: selection_append
-      field_widget_display_settings:
-        view_mode: thumbnail
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
     third_party_settings: {  }
-    type: entity_browser_entity_reference
+    type: inline_entity_form_complex
     region: content
   field_review_item_pub_date:
     weight: 15
@@ -374,4 +381,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_review_item_metadescriptio: true
   field_review_metadescripti: true

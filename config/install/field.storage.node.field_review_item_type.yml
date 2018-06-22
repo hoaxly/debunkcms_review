@@ -19,6 +19,12 @@ settings:
     -
       value: Video
       label: Video
+    -
+      value: Image
+      label: Image
+    -
+      value: Tweet
+      label: Tweet
   allowed_values_function: ''
 module: options
 locked: false

@@ -1,2 +1,4 @@
 excluded:
   - views.view.reviews_rest_api
+  - field.field.node.review.field_review_content
+  - field.storage.node.field_review_content
