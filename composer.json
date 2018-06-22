@@ -1,0 +1,8 @@
+{
+  "name": "hoaxly/review",
+  "description": "Provides Review content type and related configuration. Reviewing a news article or quote.",
+  "type": "drupal-module",
+  "version": "8.x-1.0",
+  "license": "GPL-2.0-or-later",
+  "require": {}
+}
