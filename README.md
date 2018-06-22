@@ -1,16 +1,15 @@
-This module provides a Review content type and related configuration.
+This module provides a Review content type and related configuration for the DebunkedCMS.
 
 
 Requirements
 --------------------------------------------------------------------------------
-Drupal 8 Core
-https://www.drupal.org/project/metatag
-https://www.drupal.org/project/schema_metatag
-schema_claimreview
+- Drupal 8 Core
+- https://www.drupal.org/project/metatag
+- https://www.drupal.org/project/schema_metatag
+- https://github.com/hoaxly/schema_claimreview
 
 Known Issues
 --------------------------------------------------------------------------------
--
 
 Installation
 --------------------------------------------------------------------------------
@@ -25,5 +24,5 @@ License: GNU General Public License. Feel free to use it!
 About
 --------------------------------------------------------------------------------
 This project is part of the hoax.ly project, created by acolono GmbH and funded by netidee.
-https://www.netidee.at
-https://www.acolono.com
+- https://www.netidee.at
+- https://www.acolono.com
