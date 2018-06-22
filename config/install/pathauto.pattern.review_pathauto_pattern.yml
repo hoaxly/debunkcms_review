@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: review_pathauto_pattern
+label: review_pathauto_pattern
+type: 'canonical_entities:node'
+pattern: 'review/[node:field_seo_title]'
+selection_criteria:
+  99a95e75-5f42-42cf-a3f5-e7c9a9b5a01b:
+    id: node_type
+    bundles:
+      review: review
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 99a95e75-5f42-42cf-a3f5-e7c9a9b5a01b
+selection_logic: and
+weight: -5
+relationships: {  }

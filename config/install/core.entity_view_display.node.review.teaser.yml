@@ -1,0 +1,76 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.review.field_paragraphs
+    - field.field.node.review.field_review_item_authors
+    - field.field.node.review.field_review_item_city
+    - field.field.node.review.field_review_item_claim
+    - field.field.node.review.field_review_item_country
+    - field.field.node.review.field_review_item_language
+    - field.field.node.review.field_review_item_pub_date
+    - field.field.node.review.field_review_item_publisher
+    - field.field.node.review.field_review_item_tags
+    - field.field.node.review.field_review_item_title
+    - field.field.node.review.field_review_item_type
+    - field.field.node.review.field_review_item_url
+    - field.field.node.review.field_review_metadescripti
+    - field.field.node.review.field_review_metatags
+    - field.field.node.review.field_review_rating
+    - field.field.node.review.field_seo_title
+    - field.field.node.review.field_tags
+    - field.field.node.review.field_teaser_media
+    - field.field.node.review.field_teaser_text
+    - node.type.review
+  module:
+    - empty_fields
+    - user
+id: node.review.teaser
+targetEntityType: node
+bundle: review
+mode: teaser
+content:
+  field_teaser_media:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: thumbnail
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_teaser_text:
+    type: basic_string
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_paragraphs: true
+  field_review_item_authors: true
+  field_review_item_city: true
+  field_review_item_claim: true
+  field_review_item_country: true
+  field_review_item_language: true
+  field_review_item_pub_date: true
+  field_review_item_publisher: true
+  field_review_item_tags: true
+  field_review_item_title: true
+  field_review_item_type: true
+  field_review_item_url: true
+  field_review_metadescripti: true
+  field_review_metatags: true
+  field_review_rating: true
+  field_seo_title: true
+  field_tags: true
+  langcode: true
+  shariff_field: true

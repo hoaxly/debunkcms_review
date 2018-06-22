@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_item_claim
+    - node.type.review
+id: node.review.field_review_item_claim
+field_name: field_review_item_claim
+entity_type: node
+bundle: review
+label: 'Reviewed item summary/Claim'
+description: 'A short summary of the review item/claim being evaluated or the reviewed quote itself. Try to keep this less than 75 characters to minimize wrapping when displayed on a mobile device.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

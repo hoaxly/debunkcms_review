@@ -1,0 +1,29 @@
+name: Review
+description: 'Provides Review content type and related configuration. Reviewing a news article or quote.'
+type: module
+core: 8.x
+version: '8.x-1.0'
+dependencies:
+  - datetime
+  - empty_fields
+  - entity_browser
+  - entity_reference_revisions
+  - field
+  - field_group
+  - hal
+  - link
+  - media_entity
+  - menu_ui
+  - metatag
+  - node
+  - options
+  - paragraphs
+  - path
+  - pathauto
+  - rest
+  - scheduler
+  - serialization
+  - taxonomy
+  - text
+  - user
+  - views

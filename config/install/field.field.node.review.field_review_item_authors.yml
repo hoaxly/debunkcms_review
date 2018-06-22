@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_item_authors
+    - node.type.review
+    - taxonomy.vocabulary.author
+id: node.review.field_review_item_authors
+field_name: field_review_item_authors
+entity_type: node
+bundle: review
+label: 'Review item authors'
+description: 'Author of the reviewed item'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      author: author
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,200 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.review.field_paragraphs
+    - field.field.node.review.field_review_item_authors
+    - field.field.node.review.field_review_item_city
+    - field.field.node.review.field_review_item_claim
+    - field.field.node.review.field_review_item_country
+    - field.field.node.review.field_review_item_language
+    - field.field.node.review.field_review_item_media
+    - field.field.node.review.field_review_item_pub_date
+    - field.field.node.review.field_review_item_publisher
+    - field.field.node.review.field_review_item_tags
+    - field.field.node.review.field_review_item_title
+    - field.field.node.review.field_review_item_type
+    - field.field.node.review.field_review_item_url
+    - field.field.node.review.field_review_metadescripti
+    - field.field.node.review.field_review_metatags
+    - field.field.node.review.field_review_rating
+    - field.field.node.review.field_seo_title
+    - field.field.node.review.field_tags
+    - field.field.node.review.field_teaser_media
+    - field.field.node.review.field_teaser_text
+    - node.type.review
+  module:
+    - datetime
+    - empty_fields
+    - entity_reference_revisions
+    - field_group
+    - link
+    - options
+    - user
+third_party_settings:
+  field_group:
+    group_reviewed_item:
+      children:
+        - field_review_item_publisher
+        - field_review_item_type
+        - field_review_item_title
+        - field_review_item_claim
+        - field_review_item_url
+        - field_review_item_authors
+        - field_review_item_tags
+        - field_review_item_pub_date
+        - field_review_item_language
+        - field_review_item_country
+        - field_review_item_city
+        - field_review_item_media
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: 'Reviewed item'
+id: node.review.default
+targetEntityType: node
+bundle: review
+mode: default
+content:
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_review_item_authors:
+    weight: 110
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: entity_reference_label
+    region: content
+  field_review_item_city:
+    weight: 115
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_review_item_claim:
+    weight: 108
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_review_item_country:
+    weight: 114
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_review_item_language:
+    weight: 113
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_review_item_media:
+    weight: 116
+    label: above
+    settings:
+      view_mode: thumbnail
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: entity_reference_entity_view
+    region: content
+  field_review_item_pub_date:
+    weight: 112
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_review_item_publisher:
+    weight: 105
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: entity_reference_label
+    region: content
+  field_review_item_tags:
+    weight: 111
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_review_item_title:
+    weight: 107
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_review_item_type:
+    weight: 106
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_review_item_url:
+    weight: 109
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_review_rating:
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_review_metadescripti: true
+  field_review_metatags: true
+  field_seo_title: true
+  field_tags: true
+  field_teaser_media: true
+  field_teaser_text: true
+  langcode: true
+  shariff_field: true

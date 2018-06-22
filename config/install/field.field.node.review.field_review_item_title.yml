@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_item_title
+    - node.type.review
+id: node.review.field_review_item_title
+field_name: field_review_item_title
+entity_type: node
+bundle: review
+label: 'Review item title'
+description: 'Title of the reviewed item'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

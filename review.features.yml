@@ -1,0 +1,2 @@
+excluded:
+  - views.view.reviews_rest_api

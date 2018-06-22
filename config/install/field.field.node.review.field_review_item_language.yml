@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_item_language
+    - node.type.review
+    - taxonomy.vocabulary.language
+id: node.review.field_review_item_language
+field_name: field_review_item_language
+entity_type: node
+bundle: review
+label: 'Review item language'
+description: 'Language the reviewed item is written in'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      language: language
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

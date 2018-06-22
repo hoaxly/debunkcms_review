@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_item_tags
+    - node.type.review
+    - taxonomy.vocabulary.tags
+id: node.review.field_review_item_tags
+field_name: field_review_item_tags
+entity_type: node
+bundle: review
+label: 'Review item tags'
+description: 'Tags for the reviewed item'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

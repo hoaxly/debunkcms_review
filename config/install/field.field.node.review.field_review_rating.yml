@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_rating
+    - node.type.review
+  module:
+    - options
+id: node.review.field_review_rating
+field_name: field_review_rating
+entity_type: node
+bundle: review
+label: Rating
+description: 'The assessment of the claim. '
+required: true
+translatable: false
+default_value:
+  -
+    value: '2'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

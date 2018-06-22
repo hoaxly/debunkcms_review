@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_item_url
+    - node.type.review
+  module:
+    - link
+id: node.review.field_review_item_url
+field_name: field_review_item_url
+entity_type: node
+bundle: review
+label: 'Review item url'
+description: 'URL of the reviewed item (when available)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
